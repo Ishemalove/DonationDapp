@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+A blockchain-powered donation and scholarship management platform built on the Ethereum network. This DApp allows users to donate ETH, apply for scholarships, and enables the admin to release funds—all via a smart contract!
 
-## Project info
+🚀 Tech Stack
+Solidity for smart contracts
 
-**URL**: https://lovable.dev/projects/56f8c380-e5a1-47cb-ba28-5171ad7f44fc
+Truffle for development & deployment
 
-## How can I edit this code?
+Ganache as a local Ethereum blockchain
 
-There are several ways of editing your application.
+MetaMask for wallet management
 
-**Use Lovable**
+Web3.js for blockchain interaction
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/56f8c380-e5a1-47cb-ba28-5171ad7f44fc) and start prompting.
+HTML/CSS/JavaScript for the front end
 
-Changes made via Lovable will be committed automatically to this repo.
+🧠 Features
+📥 Donate ETH to support scholarship applicants
 
-**Use your preferred IDE**
+🧑‍🎓 Apply for a scholarship with a single click
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🛠 Admin-only fund release to selected recipients
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+📊 View contract balance in real-time
 
-Follow these steps:
+🔧 How to Run
+Clone the repo and install dependencies.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Start Ganache and configure MetaMask with Ganache's network.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Compile and deploy the smart contract with Truffle.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Launch the frontend via a simple HTTP server.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Interact with the contract: donate, apply, or release funds!
 
-**Edit a file directly in GitHub**
+💡 Demo Commands
+bash
+Copy
+Edit
+truffle compile
+truffle migrate
+npx http-server client/
+Open your browser at http://localhost:8080 and make sure MetaMask is connected ✅
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+👨‍💻 Contract Functions
+donate(): Send ETH to the contract
 
-**Use GitHub Codespaces**
+applyForScholarship(): Apply as a scholarship candidate
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+releaseFunds(address, amount): Admin sends ETH to recipients
 
-## What technologies are used for this project?
+getBalance(): Get total funds available
 
-This project is built with:
+📷 Preview
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+📝 License
+MIT License
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/56f8c380-e5a1-47cb-ba28-5171ad7f44fc) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
