@@ -1,58 +1,49 @@
-A blockchain-powered donation and scholarship management platform built on the Ethereum network. This DApp allows users to donate ETH, apply for scholarships, and enables the admin to release funds—all via a smart contract!
+# 🎓 Blockchain-Powered Donation & Scholarship Platform  
 
-🚀 Tech Stack
-Solidity for smart contracts
+> **A decentralized application (DApp)** built on the **Ethereum network** to streamline donations and scholarship management.  
+> Users can donate ETH, apply for scholarships, and admins can release funds—all secured by **smart contracts**.  
 
-Truffle for development & deployment
+---
 
-Ganache as a local Ethereum blockchain
+## 🚀 Tech Stack  
+| Technology | Purpose |
+|------------|---------|
+| **Solidity** | Smart contract development |
+| **Truffle** | Development & deployment framework |
+| **Ganache** | Local Ethereum blockchain |
+| **MetaMask** | Wallet & account management |
+| **Web3.js** | Blockchain interaction |
+| **HTML / CSS / JavaScript** | Frontend UI |
 
-MetaMask for wallet management
+---
 
-Web3.js for blockchain interaction
+## 🧠 Key Features  
 
-HTML/CSS/JavaScript for the front end
+- 📥 **Donate ETH** to support scholarship applicants  
+- 🧑‍🎓 **Apply for scholarships** with one click  
+- 🔑 **Admin-only fund release** to selected recipients  
+- 📊 **Real-time contract balance** display  
 
-🧠 Features
-📥 Donate ETH to support scholarship applicants
+---
 
-🧑‍🎓 Apply for a scholarship with a single click
+## ⚙️ How to Run Locally  
 
-🛠 Admin-only fund release to selected recipients
+```bash
+# 1️⃣ Clone the repository
+git clone <your-repo-url>
 
-📊 View contract balance in real-time
+# 2️⃣ Install dependencies
+npm install
 
-🔧 How to Run
-Clone the repo and install dependencies.
+# 3️⃣ Start Ganache & configure MetaMask
+#    Add Ganache's network and import accounts
 
-Start Ganache and configure MetaMask with Ganache's network.
-
-Compile and deploy the smart contract with Truffle.
-
-Launch the frontend via a simple HTTP server.
-
-Interact with the contract: donate, apply, or release funds!
-
-💡 Demo Commands
-bash
-Copy
-Edit
+# 4️⃣ Compile and deploy the smart contract
 truffle compile
 truffle migrate
+
+# 5️⃣ Launch the frontend
 npx http-server client/
-Open your browser at http://localhost:8080 and make sure MetaMask is connected ✅
 
-👨‍💻 Contract Functions
-donate(): Send ETH to the contract
-
-applyForScholarship(): Apply as a scholarship candidate
-
-releaseFunds(address, amount): Admin sends ETH to recipients
-
-getBalance(): Get total funds available
-
-📷 Preview
-
-📝 License
-MIT License
-
+# 6️⃣ Open in browser
+http://localhost:8080  # Ensure MetaMask is connected ✅
