@@ -46,4 +46,4 @@ truffle migrate
 npx http-server client/
 
 # 6️⃣ Open in browser
-http://localhost:8080  # Ensure MetaMask is connected ✅
+http://localhost:8080  # Ensure MetaMask is connected ✅    
